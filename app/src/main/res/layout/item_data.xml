@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cardview">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="100dp"
+            android:id="@+id/imgview"
+            android:src="@drawable/ahmad_dahlan">
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textnama"
+            android:layout_toEndOf="@+id/imgview"
+            android:text="Nama Pahlawan"
+            android:layout_marginLeft="20dp"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textdesk"
+            android:layout_toEndOf="@+id/imgview"
+            android:layout_below="@+id/textnama"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Deskripsi"
+            android:ellipsize="end"
+            android:maxLines="3"/> <!--buat batas baris-->
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
