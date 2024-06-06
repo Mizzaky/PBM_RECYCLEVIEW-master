@@ -9,3 +9,4 @@ data class classPahlawan(
     val desk : String,
     val img : Int
 ):Parcelable
+
